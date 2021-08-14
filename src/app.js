@@ -5,6 +5,8 @@ const hbs = require("hbs");
 const app = express();
 const geocode = require("./utils/geocode");
 const forecast = require("./utils/forecast");
+
+const PORT = process.env.PORT || 5000;
 //for dynamic webpage
 app.set("view engine", "hbs");
 app.set("views", path.join(__dirname, "../templates/views"));
@@ -103,4 +105,4 @@ app.get("*", (req, res) => {
 });
 //404
 
-app.listen(5000);
+app.listen(PORT);
