@@ -1,1 +1,1 @@
-web: npm src/pp.js
+web: node src/app.js
