@@ -2,4 +2,4 @@
 #deployed in Heroku
 live server : https://shrouded-tor-50257.herokuapp.com/
 
-Forecast Query Api:https://shrouded-tor-50257.herokuapp.com/weather/?address=Dhaka
+Forecast Query Api : https://shrouded-tor-50257.herokuapp.com/weather/?address=Dhaka
