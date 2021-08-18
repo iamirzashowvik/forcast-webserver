@@ -7,11 +7,15 @@ weatherForm.addEventListener("submit", (e) => {
   e.preventDefault();
   fetch(
     "https://shrouded-tor-50257.herokuapp.com/weather/?address=" + search.value
+    //"http://localhost:5000/weather/?address=" + search.value
   ).then((response) => {
     response.json().then((data) => {
       if (data.error) {
         console.log(data.error);
       }
+
+      let windowlocation = window.location;
+      console.log(windowlocation, "rrrrrrrrrrrrrrrrrrr");
       console.log(data);
       messageOne.textContent = data.location;
       messageTwo.textContent = data.forecast + "     " + data.temp;
